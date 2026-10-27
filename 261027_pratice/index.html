@@ -1,13 +1,224 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>261027_pratice</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>홍길동 — Portfolio</title>
+    <meta name="description" content="홍길동의 자기소개 페이지" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <!-- 헤더 -->
+    <header class="header">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">HONG.GD</span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- 히어로 -->
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Portfolio · Est. 2026</p>
+          <h1 class="hero-title">
+            안녕하세요,<br />
+            <em>홍길동</em>입니다.
+          </h1>
+          <p class="hero-sub">
+            여기에 한 줄 소개를 적어주세요. 무엇을 하는 사람인지,<br />
+            어떤 가치를 만들고 싶은지 간결하게.
+          </p>
+          <div class="hero-actions">
+            <a href="#works" class="btn btn-primary">작업 보기</a>
+            <a href="#contact" class="btn btn-ghost">연락하기</a>
+          </div>
+        </div>
+
+        <!-- 미드센츄리 기하학 컴포지션 -->
+        <div class="hero-art" aria-hidden="true">
+          <div class="shape shape-panel"></div>
+          <div class="shape shape-tri"></div>
+          <div class="shape shape-bar"></div>
+          <div class="shape shape-stripes"></div>
+          <div class="shape shape-square"></div>
+          <div class="hero-photo">
+            <span>PHOTO</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 정보 띠 -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>DESIGN</span><span>◆</span><span>DEVELOP</span><span>◆</span>
+          <span>CREATE</span><span>◆</span><span>DESIGN</span><span>◆</span>
+          <span>DEVELOP</span><span>◆</span><span>CREATE</span><span>◆</span>
+          <span>DESIGN</span><span>◆</span><span>DEVELOP</span><span>◆</span>
+          <span>CREATE</span><span>◆</span><span>DESIGN</span><span>◆</span>
+          <span>DEVELOP</span><span>◆</span><span>CREATE</span><span>◆</span>
+        </div>
+      </div>
+
+      <!-- 소개 -->
+      <section id="about" class="section about">
+        <div class="section-head">
+          <span class="section-no">01</span>
+          <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead reveal">
+            자기소개 첫 문단입니다. 나를 가장 잘 설명하는 문장을 적어보세요.
+          </p>
+          <div class="about-body reveal">
+            <p>
+              두 번째 문단에는 조금 더 자세한 이야기를 담습니다. 관심 분야, 일하는 방식,
+              그리고 앞으로의 방향을 소개해 주세요.
+            </p>
+            <dl class="facts">
+              <div><dt>Name</dt><dd>홍길동</dd></div>
+              <div><dt>Based in</dt><dd>Seoul, Korea</dd></div>
+              <div><dt>Role</dt><dd>Your Role</dd></div>
+              <div><dt>Hobby</dt><dd>Your Hobby</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- 스킬 -->
+      <section id="skills" class="section skills">
+        <div class="section-head">
+          <span class="section-no">02</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <ul class="skill-grid">
+          <li class="skill-card reveal">
+            <span class="skill-icon icon-a"></span>
+            <h3>Skill One</h3>
+            <p>이 기술에 대한 짧은 설명을 적어주세요.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon icon-b"></span>
+            <h3>Skill Two</h3>
+            <p>이 기술에 대한 짧은 설명을 적어주세요.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon icon-c"></span>
+            <h3>Skill Three</h3>
+            <p>이 기술에 대한 짧은 설명을 적어주세요.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon icon-d"></span>
+            <h3>Skill Four</h3>
+            <p>이 기술에 대한 짧은 설명을 적어주세요.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 경력 -->
+      <section id="experience" class="section experience">
+        <div class="section-head">
+          <span class="section-no">03</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-year">2026</span>
+            <div>
+              <h3>직함 / 활동명</h3>
+              <p class="timeline-org">회사 · 학교 · 단체</p>
+              <p>어떤 일을 했는지 한두 줄로 설명해 주세요.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-year">2025</span>
+            <div>
+              <h3>직함 / 활동명</h3>
+              <p class="timeline-org">회사 · 학교 · 단체</p>
+              <p>어떤 일을 했는지 한두 줄로 설명해 주세요.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-year">2024</span>
+            <div>
+              <h3>직함 / 활동명</h3>
+              <p class="timeline-org">회사 · 학교 · 단체</p>
+              <p>어떤 일을 했는지 한두 줄로 설명해 주세요.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 작업 -->
+      <section id="works" class="section works">
+        <div class="section-head">
+          <span class="section-no">04</span>
+          <h2 class="section-title">Works</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <div class="work-thumb thumb-1"><span>01</span></div>
+            <div class="work-info">
+              <h3>Project Title</h3>
+              <p>프로젝트 설명을 적어주세요.</p>
+              <span class="work-tag">Tag</span>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-thumb thumb-2"><span>02</span></div>
+            <div class="work-info">
+              <h3>Project Title</h3>
+              <p>프로젝트 설명을 적어주세요.</p>
+              <span class="work-tag">Tag</span>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-thumb thumb-3"><span>03</span></div>
+            <div class="work-info">
+              <h3>Project Title</h3>
+              <p>프로젝트 설명을 적어주세요.</p>
+              <span class="work-tag">Tag</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 연락 -->
+      <section id="contact" class="section contact">
+        <div class="contact-box reveal">
+          <span class="section-no">05</span>
+          <h2 class="contact-title">Let's work<br /><em>together.</em></h2>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/" target="_blank" rel="noopener">github.com/username</a></li>
+            <li><span>Instagram</span><a href="https://instagram.com/" target="_blank" rel="noopener">@username</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> 홍길동. All rights reserved.</p>
+      <a href="#top" class="to-top">↑ Top</a>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
